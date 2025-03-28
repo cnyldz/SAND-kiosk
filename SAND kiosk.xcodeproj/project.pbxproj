@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		39CD10002D96A87300AC55B9 /* SAND_kioskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD0FFF2D96A87300AC55B9 /* SAND_kioskApp.swift */; };
+		39CD10022D96A87300AC55B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10012D96A87300AC55B9 /* ContentView.swift */; };
+		39CD10062D96A87400AC55B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10052D96A87400AC55B9 /* Assets.xcassets */; };
+		39CD103C2D96AAD000AC55B9 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD103B2D96AAD000AC55B9 /* BackendAPI.swift */; };
+		39CD10402D96AAE200AC55B9 /* ImageExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD103F2D96AAE200AC55B9 /* ImageExporter.swift */; };
+		39CD10422D96AAEF00AC55B9 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10412D96AAEF00AC55B9 /* View+Modifiers.swift */; };
+		39CD10482D96AC1E00AC55B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10472D96AC1800AC55B9 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		39CD10112D96A87400AC55B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,37 +35,30 @@
 
 /* Begin PBXFileReference section */
 		39CD0FFC2D96A87300AC55B9 /* SAND kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAND kiosk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CD0FFF2D96A87300AC55B9 /* SAND_kioskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAND_kioskApp.swift; sourceTree = "<group>"; };
+		39CD10012D96A87300AC55B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39CD10052D96A87400AC55B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39CD100A2D96A87400AC55B9 /* SAND_kiosk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAND_kiosk.entitlements; sourceTree = "<group>"; };
+		39CD100B2D96A87400AC55B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39CD10102D96A87400AC55B9 /* SAND kioskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAND kioskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CD101A2D96A87400AC55B9 /* SAND kioskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAND kioskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CD10332D96AA6100AC55B9 /* DreamSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamSession.swift; sourceTree = "<group>"; };
+		39CD10342D96AA6F00AC55B9 /* DreamSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamSessionViewModel.swift; sourceTree = "<group>"; };
+		39CD10362D96AA9600AC55B9 /* IdleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleView.swift; sourceTree = "<group>"; };
+		39CD10372D96AAAF00AC55B9 /* DreamInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamInputView.swift; sourceTree = "<group>"; };
+		39CD10382D96AAB700AC55B9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		39CD10392D96AABF00AC55B9 /* ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
+		39CD103A2D96AAC500AC55B9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		39CD103B2D96AAD000AC55B9 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
+		39CD103F2D96AAE200AC55B9 /* ImageExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExporter.swift; sourceTree = "<group>"; };
+		39CD10412D96AAEF00AC55B9 /* View+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
+		39CD10472D96AC1800AC55B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		39CD10222D96A87400AC55B9 /* Exceptions for "SAND kiosk" folder in "SAND kiosk" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 39CD0FFB2D96A87300AC55B9 /* SAND kiosk */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		39CD0FFE2D96A87300AC55B9 /* SAND kiosk */ = {
+		39CD10442D96ABA700AC55B9 /* Preview Content */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				39CD10222D96A87400AC55B9 /* Exceptions for "SAND kiosk" folder in "SAND kiosk" target */,
-			);
-			path = "SAND kiosk";
-			sourceTree = "<group>";
-		};
-		39CD10132D96A87400AC55B9 /* SAND kioskTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SAND kioskTests";
-			sourceTree = "<group>";
-		};
-		39CD101D2D96A87400AC55B9 /* SAND kioskUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SAND kioskUITests";
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,10 +91,18 @@
 		39CD0FF32D96A87300AC55B9 = {
 			isa = PBXGroup;
 			children = (
-				39CD0FFE2D96A87300AC55B9 /* SAND kiosk */,
-				39CD10132D96A87400AC55B9 /* SAND kioskTests */,
-				39CD101D2D96A87400AC55B9 /* SAND kioskUITests */,
+				39CD10472D96AC1800AC55B9 /* .gitignore */,
+				39CD102E2D96AA3E00AC55B9 /* Models */,
+				39CD102F2D96AA4500AC55B9 /* ViewModels */,
+				39CD10352D96AA8600AC55B9 /* Views */,
+				39CD10302D96AA4B00AC55B9 /* Services */,
+				39CD10312D96AA4D00AC55B9 /* Extensions */,
+				39CD10322D96AA5200AC55B9 /* Resources */,
 				39CD0FFD2D96A87300AC55B9 /* Products */,
+				39CD10442D96ABA700AC55B9 /* Preview Content */,
+				39CD100B2D96A87400AC55B9 /* Info.plist */,
+				39CD100A2D96A87400AC55B9 /* SAND_kiosk.entitlements */,
+				39CD0FFF2D96A87300AC55B9 /* SAND_kioskApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +114,60 @@
 				39CD101A2D96A87400AC55B9 /* SAND kioskUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		39CD102E2D96AA3E00AC55B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10332D96AA6100AC55B9 /* DreamSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		39CD102F2D96AA4500AC55B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10342D96AA6F00AC55B9 /* DreamSessionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		39CD10302D96AA4B00AC55B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				39CD103B2D96AAD000AC55B9 /* BackendAPI.swift */,
+				39CD103F2D96AAE200AC55B9 /* ImageExporter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		39CD10312D96AA4D00AC55B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10412D96AAEF00AC55B9 /* View+Modifiers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39CD10322D96AA5200AC55B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10052D96A87400AC55B9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		39CD10352D96AA8600AC55B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10012D96A87300AC55B9 /* ContentView.swift */,
+				39CD10362D96AA9600AC55B9 /* IdleView.swift */,
+				39CD10372D96AAAF00AC55B9 /* DreamInputView.swift */,
+				39CD10382D96AAB700AC55B9 /* UserInfoView.swift */,
+				39CD10392D96AABF00AC55B9 /* ProcessingView.swift */,
+				39CD103A2D96AAC500AC55B9 /* ResultView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +186,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				39CD0FFE2D96A87300AC55B9 /* SAND kiosk */,
+				39CD10442D96ABA700AC55B9 /* Preview Content */,
 			);
 			name = "SAND kiosk";
 			packageProductDependencies = (
@@ -143,9 +208,6 @@
 			dependencies = (
 				39CD10122D96A87400AC55B9 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				39CD10132D96A87400AC55B9 /* SAND kioskTests */,
-			);
 			name = "SAND kioskTests";
 			packageProductDependencies = (
 			);
@@ -165,9 +227,6 @@
 			);
 			dependencies = (
 				39CD101C2D96A87400AC55B9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				39CD101D2D96A87400AC55B9 /* SAND kioskUITests */,
 			);
 			name = "SAND kioskUITests";
 			packageProductDependencies = (
@@ -225,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CD10482D96AC1E00AC55B9 /* .gitignore in Resources */,
+				39CD10062D96A87400AC55B9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CD10022D96A87300AC55B9 /* ContentView.swift in Sources */,
+				39CD10422D96AAEF00AC55B9 /* View+Modifiers.swift in Sources */,
+				39CD103C2D96AAD000AC55B9 /* BackendAPI.swift in Sources */,
+				39CD10402D96AAE200AC55B9 /* ImageExporter.swift in Sources */,
+				39CD10002D96A87300AC55B9 /* SAND_kioskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
