@@ -2,9 +2,50 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.games407.SAND-kiosk</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Athelas-Bold.ttf</string>
+		<string>Athelas-BoldItalic.ttf</string>
+		<string>Athelas-Italic.ttf</string>
+		<string>Athelas-Regular.ttf</string>
+		<string>AveriaSerif-LightItalic.ttf</string>
+		<string>Comfortaa-Bold.ttf</string>
+		<string>Comfortaa-Light.ttf</string>
+		<string>Comfortaa-Medium.ttf</string>
+		<string>Comfortaa-Regular.ttf</string>
+		<string>Comfortaa-SemiBold.ttf</string>
+		<string>Lora-Bold.ttf</string>
+		<string>Lora-BoldItalic.ttf</string>
+		<string>Lora-Italic.ttf</string>
+		<string>Lora-Medium.ttf</string>
+		<string>Lora-MediumItalic.ttf</string>
+		<string>Lora-Regular.ttf</string>
+		<string>Lora-SemiBold.ttf</string>
+		<string>Lora-SemiBoldItalic.ttf</string>
+		<string>Lora-VariableFont_wght.ttf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

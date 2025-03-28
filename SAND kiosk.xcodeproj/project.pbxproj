@@ -14,24 +14,38 @@
 		39CD10402D96AAE200AC55B9 /* ImageExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD103F2D96AAE200AC55B9 /* ImageExporter.swift */; };
 		39CD10422D96AAEF00AC55B9 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10412D96AAEF00AC55B9 /* View+Modifiers.swift */; };
 		39CD10482D96AC1E00AC55B9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10472D96AC1800AC55B9 /* .gitignore */; };
+		39CD10492D96AD7200AC55B9 /* IdleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10362D96AA9600AC55B9 /* IdleView.swift */; };
+		39CD104B2D96AD7200AC55B9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10382D96AAB700AC55B9 /* UserInfoView.swift */; };
+		39CD104C2D96AD7200AC55B9 /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10392D96AABF00AC55B9 /* ProcessingView.swift */; };
+		39CD104D2D96AD7200AC55B9 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD103A2D96AAC500AC55B9 /* ResultView.swift */; };
+		39CD104E2D96C6BA00AC55B9 /* DreamSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10332D96AA6100AC55B9 /* DreamSession.swift */; };
+		39CD104F2D96C6C200AC55B9 /* DreamSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10342D96AA6F00AC55B9 /* DreamSessionViewModel.swift */; };
+		39CD10502D96C90000AC55B9 /* DreamInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10372D96AAAF00AC55B9 /* DreamInputView.swift */; };
+		39CD10532D96D1FC00AC55B9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10522D96D1D900AC55B9 /* Colors.swift */; };
+		39CD10552D96D49300AC55B9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10542D96D48D00AC55B9 /* Fonts.swift */; };
+		39CD10692D96D60B00AC55B9 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD105C2D96D60B00AC55B9 /* Comfortaa-Light.ttf */; };
+		39CD106A2D96D60B00AC55B9 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD105B2D96D60B00AC55B9 /* Comfortaa-Bold.ttf */; };
+		39CD106B2D96D60B00AC55B9 /* Athelas-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10572D96D60B00AC55B9 /* Athelas-BoldItalic.ttf */; };
+		39CD106C2D96D60B00AC55B9 /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD105D2D96D60B00AC55B9 /* Comfortaa-Medium.ttf */; };
+		39CD106D2D96D60B00AC55B9 /* Lora-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10612D96D60B00AC55B9 /* Lora-BoldItalic.ttf */; };
+		39CD106E2D96D60B00AC55B9 /* Athelas-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10562D96D60B00AC55B9 /* Athelas-Bold.ttf */; };
+		39CD106F2D96D60B00AC55B9 /* AveriaSerif-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD105A2D96D60B00AC55B9 /* AveriaSerif-LightItalic.ttf */; };
+		39CD10702D96D60B00AC55B9 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD105F2D96D60B00AC55B9 /* Comfortaa-SemiBold.ttf */; };
+		39CD10712D96D60B00AC55B9 /* Lora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10632D96D60B00AC55B9 /* Lora-Medium.ttf */; };
+		39CD10722D96D60B00AC55B9 /* Athelas-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10592D96D60B00AC55B9 /* Athelas-Regular.ttf */; };
+		39CD10732D96D60B00AC55B9 /* Lora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10602D96D60B00AC55B9 /* Lora-Bold.ttf */; };
+		39CD10742D96D60B00AC55B9 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD105E2D96D60B00AC55B9 /* Comfortaa-Regular.ttf */; };
+		39CD10752D96D60B00AC55B9 /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10652D96D60B00AC55B9 /* Lora-Regular.ttf */; };
+		39CD10762D96D60B00AC55B9 /* Athelas-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10582D96D60B00AC55B9 /* Athelas-Italic.ttf */; };
+		39CD10772D96D60B00AC55B9 /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10622D96D60B00AC55B9 /* Lora-Italic.ttf */; };
+		39CD10782D96D60B00AC55B9 /* Lora-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10642D96D60B00AC55B9 /* Lora-MediumItalic.ttf */; };
+		39CD10792D96D60B00AC55B9 /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10682D96D60B00AC55B9 /* Lora-VariableFont_wght.ttf */; };
+		39CD107A2D96D60B00AC55B9 /* Lora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10662D96D60B00AC55B9 /* Lora-SemiBold.ttf */; };
+		39CD107B2D96D60B00AC55B9 /* Lora-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39CD10672D96D60B00AC55B9 /* Lora-SemiBoldItalic.ttf */; };
+		39CD107F2D96D95700AC55B9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 39CD107E2D96D95700AC55B9 /* Lottie */; };
+		39CD10832D96D9BE00AC55B9 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD10822D96D9B600AC55B9 /* LottieView.swift */; };
+		39E3EF492D96DC1400DB85FA /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 39E3EF482D96DC1400DB85FA /* test.json */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		39CD10112D96A87400AC55B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CD0FF42D96A87300AC55B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 39CD0FFB2D96A87300AC55B9;
-			remoteInfo = "SAND kiosk";
-		};
-		39CD101B2D96A87400AC55B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39CD0FF42D96A87300AC55B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 39CD0FFB2D96A87300AC55B9;
-			remoteInfo = "SAND kiosk";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		39CD0FFC2D96A87300AC55B9 /* SAND kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAND kiosk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,8 +54,6 @@
 		39CD10052D96A87400AC55B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39CD100A2D96A87400AC55B9 /* SAND_kiosk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAND_kiosk.entitlements; sourceTree = "<group>"; };
 		39CD100B2D96A87400AC55B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39CD10102D96A87400AC55B9 /* SAND kioskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAND kioskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		39CD101A2D96A87400AC55B9 /* SAND kioskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAND kioskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39CD10332D96AA6100AC55B9 /* DreamSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamSession.swift; sourceTree = "<group>"; };
 		39CD10342D96AA6F00AC55B9 /* DreamSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamSessionViewModel.swift; sourceTree = "<group>"; };
 		39CD10362D96AA9600AC55B9 /* IdleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleView.swift; sourceTree = "<group>"; };
@@ -53,6 +65,29 @@
 		39CD103F2D96AAE200AC55B9 /* ImageExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExporter.swift; sourceTree = "<group>"; };
 		39CD10412D96AAEF00AC55B9 /* View+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
 		39CD10472D96AC1800AC55B9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		39CD10522D96D1D900AC55B9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		39CD10542D96D48D00AC55B9 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		39CD10562D96D60B00AC55B9 /* Athelas-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Athelas-Bold.ttf"; sourceTree = "<group>"; };
+		39CD10572D96D60B00AC55B9 /* Athelas-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Athelas-BoldItalic.ttf"; sourceTree = "<group>"; };
+		39CD10582D96D60B00AC55B9 /* Athelas-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Athelas-Italic.ttf"; sourceTree = "<group>"; };
+		39CD10592D96D60B00AC55B9 /* Athelas-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Athelas-Regular.ttf"; sourceTree = "<group>"; };
+		39CD105A2D96D60B00AC55B9 /* AveriaSerif-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AveriaSerif-LightItalic.ttf"; sourceTree = "<group>"; };
+		39CD105B2D96D60B00AC55B9 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		39CD105C2D96D60B00AC55B9 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		39CD105D2D96D60B00AC55B9 /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
+		39CD105E2D96D60B00AC55B9 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		39CD105F2D96D60B00AC55B9 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		39CD10602D96D60B00AC55B9 /* Lora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Bold.ttf"; sourceTree = "<group>"; };
+		39CD10612D96D60B00AC55B9 /* Lora-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-BoldItalic.ttf"; sourceTree = "<group>"; };
+		39CD10622D96D60B00AC55B9 /* Lora-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic.ttf"; sourceTree = "<group>"; };
+		39CD10632D96D60B00AC55B9 /* Lora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Medium.ttf"; sourceTree = "<group>"; };
+		39CD10642D96D60B00AC55B9 /* Lora-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-MediumItalic.ttf"; sourceTree = "<group>"; };
+		39CD10652D96D60B00AC55B9 /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		39CD10662D96D60B00AC55B9 /* Lora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-SemiBold.ttf"; sourceTree = "<group>"; };
+		39CD10672D96D60B00AC55B9 /* Lora-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		39CD10682D96D60B00AC55B9 /* Lora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		39CD10822D96D9B600AC55B9 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		39E3EF482D96DC1400DB85FA /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -68,20 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39CD100D2D96A87400AC55B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39CD10172D96A87400AC55B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				39CD107F2D96D95700AC55B9 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +119,7 @@
 				39CD10352D96AA8600AC55B9 /* Views */,
 				39CD10302D96AA4B00AC55B9 /* Services */,
 				39CD10312D96AA4D00AC55B9 /* Extensions */,
+				39CD10512D96D1C600AC55B9 /* DesignSystem */,
 				39CD10322D96AA5200AC55B9 /* Resources */,
 				39CD0FFD2D96A87300AC55B9 /* Products */,
 				39CD10442D96ABA700AC55B9 /* Preview Content */,
@@ -109,9 +132,8 @@
 		39CD0FFD2D96A87300AC55B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				39CD107C2D96D61000AC55B9 /* Fonts */,
 				39CD0FFC2D96A87300AC55B9 /* SAND kiosk.app */,
-				39CD10102D96A87400AC55B9 /* SAND kioskTests.xctest */,
-				39CD101A2D96A87400AC55B9 /* SAND kioskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +174,7 @@
 		39CD10322D96AA5200AC55B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				39E3EF482D96DC1400DB85FA /* test.json */,
 				39CD10052D96A87400AC55B9 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -168,6 +191,42 @@
 				39CD103A2D96AAC500AC55B9 /* ResultView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		39CD10512D96D1C600AC55B9 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10822D96D9B600AC55B9 /* LottieView.swift */,
+				39CD10542D96D48D00AC55B9 /* Fonts.swift */,
+				39CD10522D96D1D900AC55B9 /* Colors.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		39CD107C2D96D61000AC55B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				39CD10562D96D60B00AC55B9 /* Athelas-Bold.ttf */,
+				39CD10572D96D60B00AC55B9 /* Athelas-BoldItalic.ttf */,
+				39CD10582D96D60B00AC55B9 /* Athelas-Italic.ttf */,
+				39CD10592D96D60B00AC55B9 /* Athelas-Regular.ttf */,
+				39CD105A2D96D60B00AC55B9 /* AveriaSerif-LightItalic.ttf */,
+				39CD105B2D96D60B00AC55B9 /* Comfortaa-Bold.ttf */,
+				39CD105C2D96D60B00AC55B9 /* Comfortaa-Light.ttf */,
+				39CD105D2D96D60B00AC55B9 /* Comfortaa-Medium.ttf */,
+				39CD105E2D96D60B00AC55B9 /* Comfortaa-Regular.ttf */,
+				39CD105F2D96D60B00AC55B9 /* Comfortaa-SemiBold.ttf */,
+				39CD10602D96D60B00AC55B9 /* Lora-Bold.ttf */,
+				39CD10612D96D60B00AC55B9 /* Lora-BoldItalic.ttf */,
+				39CD10622D96D60B00AC55B9 /* Lora-Italic.ttf */,
+				39CD10632D96D60B00AC55B9 /* Lora-Medium.ttf */,
+				39CD10642D96D60B00AC55B9 /* Lora-MediumItalic.ttf */,
+				39CD10652D96D60B00AC55B9 /* Lora-Regular.ttf */,
+				39CD10662D96D60B00AC55B9 /* Lora-SemiBold.ttf */,
+				39CD10672D96D60B00AC55B9 /* Lora-SemiBoldItalic.ttf */,
+				39CD10682D96D60B00AC55B9 /* Lora-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,50 +249,11 @@
 			);
 			name = "SAND kiosk";
 			packageProductDependencies = (
+				39CD107E2D96D95700AC55B9 /* Lottie */,
 			);
 			productName = "SAND kiosk";
 			productReference = 39CD0FFC2D96A87300AC55B9 /* SAND kiosk.app */;
 			productType = "com.apple.product-type.application";
-		};
-		39CD100F2D96A87400AC55B9 /* SAND kioskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 39CD10282D96A87400AC55B9 /* Build configuration list for PBXNativeTarget "SAND kioskTests" */;
-			buildPhases = (
-				39CD100C2D96A87400AC55B9 /* Sources */,
-				39CD100D2D96A87400AC55B9 /* Frameworks */,
-				39CD100E2D96A87400AC55B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				39CD10122D96A87400AC55B9 /* PBXTargetDependency */,
-			);
-			name = "SAND kioskTests";
-			packageProductDependencies = (
-			);
-			productName = "SAND kioskTests";
-			productReference = 39CD10102D96A87400AC55B9 /* SAND kioskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		39CD10192D96A87400AC55B9 /* SAND kioskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 39CD102B2D96A87400AC55B9 /* Build configuration list for PBXNativeTarget "SAND kioskUITests" */;
-			buildPhases = (
-				39CD10162D96A87400AC55B9 /* Sources */,
-				39CD10172D96A87400AC55B9 /* Frameworks */,
-				39CD10182D96A87400AC55B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				39CD101C2D96A87400AC55B9 /* PBXTargetDependency */,
-			);
-			name = "SAND kioskUITests";
-			packageProductDependencies = (
-			);
-			productName = "SAND kioskUITests";
-			productReference = 39CD101A2D96A87400AC55B9 /* SAND kioskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -248,14 +268,6 @@
 					39CD0FFB2D96A87300AC55B9 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					39CD100F2D96A87400AC55B9 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 39CD0FFB2D96A87300AC55B9;
-					};
-					39CD10192D96A87400AC55B9 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 39CD0FFB2D96A87300AC55B9;
-					};
 				};
 			};
 			buildConfigurationList = 39CD0FF72D96A87300AC55B9 /* Build configuration list for PBXProject "SAND kiosk" */;
@@ -267,14 +279,15 @@
 			);
 			mainGroup = 39CD0FF32D96A87300AC55B9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				39CD107D2D96D95700AC55B9 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 39CD0FFD2D96A87300AC55B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				39CD0FFB2D96A87300AC55B9 /* SAND kiosk */,
-				39CD100F2D96A87400AC55B9 /* SAND kioskTests */,
-				39CD10192D96A87400AC55B9 /* SAND kioskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,22 +297,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CD10692D96D60B00AC55B9 /* Comfortaa-Light.ttf in Resources */,
+				39CD106A2D96D60B00AC55B9 /* Comfortaa-Bold.ttf in Resources */,
+				39CD106B2D96D60B00AC55B9 /* Athelas-BoldItalic.ttf in Resources */,
+				39CD106C2D96D60B00AC55B9 /* Comfortaa-Medium.ttf in Resources */,
+				39CD106D2D96D60B00AC55B9 /* Lora-BoldItalic.ttf in Resources */,
+				39CD106E2D96D60B00AC55B9 /* Athelas-Bold.ttf in Resources */,
+				39CD106F2D96D60B00AC55B9 /* AveriaSerif-LightItalic.ttf in Resources */,
+				39CD10702D96D60B00AC55B9 /* Comfortaa-SemiBold.ttf in Resources */,
+				39CD10712D96D60B00AC55B9 /* Lora-Medium.ttf in Resources */,
+				39CD10722D96D60B00AC55B9 /* Athelas-Regular.ttf in Resources */,
+				39CD10732D96D60B00AC55B9 /* Lora-Bold.ttf in Resources */,
+				39CD10742D96D60B00AC55B9 /* Comfortaa-Regular.ttf in Resources */,
+				39CD10752D96D60B00AC55B9 /* Lora-Regular.ttf in Resources */,
+				39CD10762D96D60B00AC55B9 /* Athelas-Italic.ttf in Resources */,
+				39CD10772D96D60B00AC55B9 /* Lora-Italic.ttf in Resources */,
+				39E3EF492D96DC1400DB85FA /* test.json in Resources */,
+				39CD10782D96D60B00AC55B9 /* Lora-MediumItalic.ttf in Resources */,
+				39CD10792D96D60B00AC55B9 /* Lora-VariableFont_wght.ttf in Resources */,
+				39CD107A2D96D60B00AC55B9 /* Lora-SemiBold.ttf in Resources */,
+				39CD107B2D96D60B00AC55B9 /* Lora-SemiBoldItalic.ttf in Resources */,
 				39CD10482D96AC1E00AC55B9 /* .gitignore in Resources */,
 				39CD10062D96A87400AC55B9 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39CD100E2D96A87400AC55B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39CD10182D96A87400AC55B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CD10552D96D49300AC55B9 /* Fonts.swift in Sources */,
+				39CD10492D96AD7200AC55B9 /* IdleView.swift in Sources */,
+				39CD10832D96D9BE00AC55B9 /* LottieView.swift in Sources */,
+				39CD104B2D96AD7200AC55B9 /* UserInfoView.swift in Sources */,
+				39CD104F2D96C6C200AC55B9 /* DreamSessionViewModel.swift in Sources */,
+				39CD104C2D96AD7200AC55B9 /* ProcessingView.swift in Sources */,
+				39CD104D2D96AD7200AC55B9 /* ResultView.swift in Sources */,
+				39CD104E2D96C6BA00AC55B9 /* DreamSession.swift in Sources */,
 				39CD10022D96A87300AC55B9 /* ContentView.swift in Sources */,
+				39CD10502D96C90000AC55B9 /* DreamInputView.swift in Sources */,
+				39CD10532D96D1FC00AC55B9 /* Colors.swift in Sources */,
 				39CD10422D96AAEF00AC55B9 /* View+Modifiers.swift in Sources */,
 				39CD103C2D96AAD000AC55B9 /* BackendAPI.swift in Sources */,
 				39CD10402D96AAE200AC55B9 /* ImageExporter.swift in Sources */,
@@ -318,34 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39CD100C2D96A87400AC55B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39CD10162D96A87400AC55B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		39CD10122D96A87400AC55B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 39CD0FFB2D96A87300AC55B9 /* SAND kiosk */;
-			targetProxy = 39CD10112D96A87400AC55B9 /* PBXContainerItemProxy */;
-		};
-		39CD101C2D96A87400AC55B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 39CD0FFB2D96A87300AC55B9 /* SAND kiosk */;
-			targetProxy = 39CD101B2D96A87400AC55B9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		39CD10242D96A87400AC55B9 /* Debug */ = {
@@ -353,19 +355,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "SAND kiosk/SAND_kiosk.entitlements";
+				CODE_SIGN_ENTITLEMENTS = SAND_kiosk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SAND kiosk/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 2F9KK66UP3;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SAND kiosk/Info.plist";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SAND-Kiosk";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,19 +387,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "SAND kiosk/SAND_kiosk.entitlements";
+				CODE_SIGN_ENTITLEMENTS = SAND_kiosk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SAND kiosk/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 2F9KK66UP3;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SAND kiosk/Info.plist";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "SAND-Kiosk";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,78 +533,6 @@
 			};
 			name = Release;
 		};
-		39CD10292D96A87400AC55B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F9KK66UP3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.games407.SAND-kioskTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAND kiosk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SAND kiosk";
-			};
-			name = Debug;
-		};
-		39CD102A2D96A87400AC55B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F9KK66UP3;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.games407.SAND-kioskTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAND kiosk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SAND kiosk";
-			};
-			name = Release;
-		};
-		39CD102C2D96A87400AC55B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F9KK66UP3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.games407.SAND-kioskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SAND kiosk";
-			};
-			name = Debug;
-		};
-		39CD102D2D96A87400AC55B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F9KK66UP3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.games407.SAND-kioskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SAND kiosk";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,25 +554,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		39CD10282D96A87400AC55B9 /* Build configuration list for PBXNativeTarget "SAND kioskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				39CD10292D96A87400AC55B9 /* Debug */,
-				39CD102A2D96A87400AC55B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		39CD102B2D96A87400AC55B9 /* Build configuration list for PBXNativeTarget "SAND kioskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				39CD102C2D96A87400AC55B9 /* Debug */,
-				39CD102D2D96A87400AC55B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39CD107D2D96D95700AC55B9 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39CD107E2D96D95700AC55B9 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39CD107D2D96D95700AC55B9 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39CD0FF42D96A87300AC55B9 /* Project object */;
 }
