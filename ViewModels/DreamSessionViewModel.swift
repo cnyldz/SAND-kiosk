@@ -9,32 +9,84 @@ enum ScreenState {
     case result
 }
 
+@MainActor
 class DreamSessionViewModel: ObservableObject {
     @Published var currentScreen: ScreenState = .idle
-    @Published var session = DreamSession()
-
+    @Published var name = ""
+    @Published var surname = ""
+    @Published var email = ""
+    @Published var dreamText = ""
+    @Published var uniquenessScore: Int?
+    @Published var absurdityScore: Int?
+    @Published var translatedDream: String?
+    @Published var isProcessing = false
+    @Published var error: String?
+    
     func resetSession() {
-        session = DreamSession()
+        name = ""
+        surname = ""
+        email = ""
+        dreamText = ""
+        uniquenessScore = nil
+        absurdityScore = nil
+        translatedDream = nil
+        error = nil
         currentScreen = .idle
+        isProcessing = false
     }
-
+    
     func updateUserInfo(name: String, surname: String, email: String) {
-        session.name = name
-        session.surname = surname
-        session.email = email
+        self.name = name
+        self.surname = surname
+        self.email = email
     }
-
+    
     func updateDreamText(_ text: String) {
-        session.dreamText = text
+        self.dreamText = text
     }
-
-    func updateScores(rarity: Int, absurdity: Int) {
-        session.rarityScore = rarity
-        session.absurdityScore = absurdity
-    }
-
-    func updateGeneratedImage(image: UIImage, url: URL?) {
-        session.generatedImage = image
-        session.generatedImageURL = url
+    
+    func submitDream() {
+        guard !dreamText.isEmpty else {
+            error = "Please enter your dream"
+            print("Validation failed: Dream text is empty")
+            return
+        }
+        
+        guard !name.isEmpty else {
+            error = "Please enter your name"
+            print("Validation failed: Name is empty")
+            return
+        }
+        
+        isProcessing = true
+        error = nil
+        currentScreen = .processing
+        print("Starting dream analysis request - Name: \(name), Dream length: \(dreamText.count) characters")
+        
+        Task {
+            do {
+                print("Sending request to backend...")
+                let response = try await BackendAPI.shared.analyzeDream(
+                    name: name,
+                    surname: surname,
+                    email: email,
+                    dreamText: dreamText
+                )
+                
+                print("Received successful response - Uniqueness: \(response.uniquenessScore), Absurdity: \(response.absurdityScore)")
+                self.uniquenessScore = response.uniquenessScore
+                self.absurdityScore = response.absurdityScore
+                self.translatedDream = response.translatedDream
+                self.currentScreen = .result
+                self.isProcessing = false
+            } catch {
+                print("Dream analysis failed with error: \(error)")
+                if let apiError = error as? APIError {
+                    print("API Error details: \(apiError.errorDescription ?? "No description")")
+                }
+                self.error = "Failed to analyze dream: \(error.localizedDescription)"
+                self.isProcessing = false
+            }
+        }
     }
 }

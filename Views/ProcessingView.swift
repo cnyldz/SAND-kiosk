@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ProcessingView: View {
     @ObservedObject var viewModel: DreamSessionViewModel
-    @State private var isProcessing = true
-
+    @State private var animationPhase = 0
+    
+    let animationTexts = [
+        "Rüyanız analiz ediliyor...",
+        "Benzersizlik ölçülüyor...",
+        "Görsel oluşturuluyor...",
+        "Sonuçlar hazırlanıyor..."
+    ]
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -21,33 +28,34 @@ struct ProcessingView: View {
             .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                Text("Rüyanız analiz ediliyor...")
+                Text(animationTexts[animationPhase])
                     .font(.title2)
                     .foregroundColor(.white)
                     .transition(.opacity)
-                    .animation(.easeInOut(duration: 1), value: isProcessing)
+                    .id("phase\(animationPhase)")  // Force view refresh on text change
 
-                Text("Benzersizlik ve tuhaflık ölçülüyor...")
-                    .font(.title3)
-                    .foregroundColor(.gray)
-                    .transition(.opacity)
-                    .animation(.easeInOut(duration: 1).delay(0.5), value: isProcessing)
-
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                    .scaleEffect(1.5)
+                if let error = viewModel.error {
+                    Text(error)
+                        .foregroundColor(.red)
+                        .padding()
+                } else {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .scaleEffect(1.5)
+                }
             }
         }
         .onAppear {
-            simulateDreamAnalysis()
+            startPhaseAnimation()
         }
     }
-
-    private func simulateDreamAnalysis() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-            viewModel.updateScores(rarity: Int.random(in: 70...100), absurdity: Int.random(in: 60...100))
-            viewModel.updateGeneratedImage(image: UIImage(systemName: "photo")!, url: nil)
-            viewModel.currentScreen = .result
+    
+    private func startPhaseAnimation() {
+        // Cycle through animation phases every 1.5 seconds
+        Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true) { timer in
+            withAnimation {
+                animationPhase = (animationPhase + 1) % animationTexts.count
+            }
         }
     }
 }

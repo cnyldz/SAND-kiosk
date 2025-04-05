@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ResultView: View {
     @ObservedObject var viewModel: DreamSessionViewModel
+    @State private var generatedImage: UIImage? = nil // Temporary state for the generated image
 
     var body: some View {
         ZStack {
@@ -21,7 +22,7 @@ struct ResultView: View {
             .ignoresSafeArea()
 
             VStack(spacing: 24) {
-                if let image = viewModel.session.generatedImage {
+                if let image = generatedImage {
                     ZStack {
                         Image(uiImage: image)
                             .resizable()
@@ -46,23 +47,54 @@ struct ResultView: View {
                     }
                 }
 
-                if let rarity = viewModel.session.rarityScore,
-                   let absurdity = viewModel.session.absurdityScore {
-                    Text("Tuhaflık: \(absurdity)   Benzersizlik: \(rarity)")
-                        .foregroundColor(.white)
-                        .font(.headline)
-
-                    if rarity > 90 {
-                        Text("Rüyanız en tuhaf %5 arasında yer alıyor!")
+                if let uniqueness = viewModel.uniquenessScore,
+                   let absurdity = viewModel.absurdityScore {
+                    VStack(spacing: 16) {
+                        Text("Rüya Analizi")
+                            .font(.title2)
                             .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal)
+                            .padding(.bottom, 8)
+                        
+                        Text("Tuhaflık: %\(absurdity)")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                        
+                        Text("Benzersizlik: %\(uniqueness)")
+                            .foregroundColor(.white)
+                            .font(.headline)
+
+                        if uniqueness > 90 {
+                            Text("Rüyanız en tuhaf %5 arasında yer alıyor!")
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal)
+                        } else if uniqueness > 75 {
+                            Text("Rüyanız oldukça benzersiz!")
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal)
+                        }
+                        
+                        if let translatedDream = viewModel.translatedDream {
+                            Text("İngilizce Çeviri:")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                                .padding(.top)
+                            
+                            Text(translatedDream)
+                                .foregroundColor(.white.opacity(0.9))
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal)
+                        }
                     }
+                    .padding()
+                    .background(Color.black.opacity(0.2))
+                    .cornerRadius(16)
                 }
 
                 HStack(spacing: 20) {
                     Button(action: {
-                        if let image = viewModel.session.generatedImage {
+                        if let image = generatedImage {
                             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                         }
                     }) {
@@ -73,6 +105,7 @@ struct ResultView: View {
                             .background(Color(hex: "#bf5c8e"))
                             .cornerRadius(10)
                     }
+                    .disabled(generatedImage == nil)
 
                     Button(action: {
                         viewModel.resetSession()
@@ -88,6 +121,14 @@ struct ResultView: View {
                 .padding(.horizontal)
             }
             .padding()
+            .onAppear {
+                // Here we would generate the image based on the translated dream
+                if let translatedDream = viewModel.translatedDream {
+                    // TODO: Call image generation service
+                    // For now, we'll use a placeholder image
+                    generatedImage = UIImage(systemName: "photo")
+                }
+            }
         }
     }
 }

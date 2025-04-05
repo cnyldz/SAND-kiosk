@@ -33,7 +33,7 @@ struct AppColors {
     static let buttonBG1 = Color(hex: "#FE722D")
     static let buttonBG2 = Color(hex: "#000000")
     static let gradientOne = Color(hex: "#06071d")
-    static let gradientTwo = Color(hex: "#efe1cb")
+    static let gradientTwo = Color(hex: "#4c5f89")
     static let gradientThree = Color(hex: "#06071d")
     static let secondaryText = Color(hex: "#fff")
     static let textSecondary = Color(hex: "#efe1cb")
