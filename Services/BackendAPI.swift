@@ -7,15 +7,18 @@
 
 import Foundation
 
+// Removed Combine; struct is plain Codable
 struct DreamAnalysisResponse: Codable {
     let uniquenessScore: Int
     let absurdityScore: Int
     let translatedDream: String?
+    let imageUrl: String?
     
     enum CodingKeys: String, CodingKey {
         case uniquenessScore = "uniqueness_score"
         case absurdityScore = "absurdity_score"
         case translatedDream = "translated_dream"
+        case imageUrl = "image_url"
     }
     
     init(from decoder: Decoder) throws {
@@ -28,6 +31,7 @@ struct DreamAnalysisResponse: Codable {
         uniquenessScore = Int(rawUniqueness)
         absurdityScore = Int(rawAbsurdity * 100)
         translatedDream = try container.decodeIfPresent(String.self, forKey: .translatedDream)
+        imageUrl = try container.decodeIfPresent(String.self, forKey: .imageUrl)
     }
 }
 

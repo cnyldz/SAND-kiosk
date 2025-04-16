@@ -19,6 +19,7 @@ class DreamSessionViewModel: ObservableObject {
     @Published var uniquenessScore: Int?
     @Published var absurdityScore: Int?
     @Published var translatedDream: String?
+    @Published var imageUrl: String?
     @Published var isProcessing = false
     @Published var error: String?
     
@@ -30,6 +31,7 @@ class DreamSessionViewModel: ObservableObject {
         uniquenessScore = nil
         absurdityScore = nil
         translatedDream = nil
+        imageUrl = nil
         error = nil
         currentScreen = .idle
         isProcessing = false
@@ -77,6 +79,7 @@ class DreamSessionViewModel: ObservableObject {
                 self.uniquenessScore = response.uniquenessScore
                 self.absurdityScore = response.absurdityScore
                 self.translatedDream = response.translatedDream
+                self.imageUrl = response.imageUrl
                 self.currentScreen = .result
                 self.isProcessing = false
             } catch {
