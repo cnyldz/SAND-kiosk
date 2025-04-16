@@ -60,7 +60,7 @@ enum APIError: Error, LocalizedError {
 
 class BackendAPI {
     static let shared = BackendAPI()
-    let baseURL = URL(string: "http://localhost:8000")!
+    let baseURL = URL(string: "http://localhost:8001")!
     
     func analyzeDream(name: String, surname: String, email: String, dreamText: String) async throws -> DreamAnalysisResponse {
         let endpoint = baseURL.appendingPathComponent("analyze-dream")
